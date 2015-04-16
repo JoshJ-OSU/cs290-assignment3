@@ -1,3 +1,7 @@
+Start: Thu, 16 Apr 2015 13:10:00 -0700
+End: Thu, 16 Apr 2015 3:56:21 -0700
+Tasks: Watched videos on functions.  Completed functionality of functions.js.  The parseGit function took me a long time to complete.
+
 Start: Thu, 16 Apr 2015 11:00:00 -0700
 End: Thu, 16 Apr 2015 11:41:00 -0700
 Tasks: Watched videos on Intro to JavaScript, Variables, and Debugging using Chrome Dev Tools.  Completed variables.js (still have to format to Google standards).  Created uselessFunction() in functions.js.
