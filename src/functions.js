@@ -32,7 +32,17 @@ var barType = typeof bar;
 */
 
 //your code here
-
+bar = function (doubleArray) {
+  var i;
+  var successfulAssignment = true;
+  for(i = 0; i < doubleArray.length; i++) {
+    if (!(doubleArray[i] *= 2)) {
+      successfulAssignment = false;
+    }
+  }
+    
+  return successfulAssignment;
+}
 //end your code
 
 /**
@@ -68,5 +78,25 @@ function GitLog(hash, date, message) {
 */
 
 //your code here
+parseGit = function(logArray) {
+  var str;
+  var hashStr, dateStr, messageStr;
+  var hashEndIndex, dateEndIndex;
+  var gitLogArr = [];
+  
+  var i;
+  for (i = 0; i < logArray.length; i++) {
+    str = new String(logArray[i]);
+    
+    hashStr = str.substr(0,str.indexOf(' '));
+    dateStr = str.substring(str.indexOf(' '), str.indexOf('"'));
+    messageStr = str.substring(str.indexOf('"')+1,str.length - 1);
+    
+    date = new Date(dateStr);
+    
+    gitLogArr[i] = new GitLog(hashStr, date, messageStr);
+  }
 
+  return gitLogArr;
+}
 //end your code
