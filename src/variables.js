@@ -30,10 +30,11 @@ return true if b is a primitive string value (also known as a string literal),
 false otherwise
 */
 function isString(b) {
-  //your code here
-
-  return undefined;
-  //end your code
+  if (typeof b == "string") {
+      return true;
+  } else {
+      return false;
+  }
 }
 
 /*
@@ -44,7 +45,9 @@ Output:
 return true if c is null, false otherwise
 */
 function isNull(c) {
-    
-  return undefined;
-  //end your code
+  if ((c == null) && (typeof c == "object")) {
+    return true;
+  }else {
+    return false;
+  }
 }
