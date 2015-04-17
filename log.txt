@@ -1,5 +1,13 @@
+Start: Fri, 17 Apr 2015 7:20:00 -0700
+End: Fri, 17 Apr 2015 9:50:00 -0700
+Tasks: Finished objects.js functionality, Attempted to align format of js to google coding standards using jslint.com
+
+Start: Thu, 16 Apr 2015 15:45:00 -0700
+End: Thu, 16 Apr 2015 16:31:00 -0700
+Tasks: Watched videos on object.  Attempted work on objects.js, but still unsure how to get the syntax to work.
+
 Start: Thu, 16 Apr 2015 13:10:00 -0700
-End: Thu, 16 Apr 2015 3:56:21 -0700
+End: Thu, 16 Apr 2015 15:26:51 -0700
 Tasks: Watched videos on functions.  Completed functionality of functions.js.  The parseGit function took me a long time to complete.
 
 Start: Thu, 16 Apr 2015 11:00:00 -0700
