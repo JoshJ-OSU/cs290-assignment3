@@ -9,12 +9,12 @@
 */
 
 function returnObjectLiteral() {
- return {
-      type: 'Goldfish',
-      brand: 'Pepperidge Farm',
-      flavor: 'Cheddar',
-      count: 2000
-  }
+  return {
+    type: 'Goldfish',
+    brand: 'Pepperidge Farm',
+    flavor: 'Cheddar',
+    count: 2000
+  };
   //end your code
 }
 
@@ -45,13 +45,13 @@ function returnObjectLiteral() {
 
 //your code here
 function MessageLog(user) {
-  
+
   this.user = user;
   this.msgArr = [];
   this.dirArr = [];
-  
-  
-  this.logMessage = function(messageText, direction) {
+
+
+  this.logMessage = function (messageText, direction) {
     //store message in msgArr at beginning of Array
     this.msgArr.unshift(messageText);
     this.dirArr.unshift(direction);
@@ -59,13 +59,13 @@ function MessageLog(user) {
     if (this.msgArr > 5) {
       this.msgArr.pop();
     }
-  }
-    
-  this.getSentMessage = function(n) {
-      return this.msgArr[n];
-  }
+  };
 
-  this.totalSent = function() {
+  this.getSentMessage = function (n) {
+    return this.msgArr[n];
+  };
+
+  this.totalSent = function () {
     var i;
     var sum = 0;
     for (i = 0; i < this.dirArr.length; i++) {
@@ -73,11 +73,11 @@ function MessageLog(user) {
         sum++;
       }
     }
-    
+
     return sum;
-  }
-    
-  this.totalReceived = function() {
+  };
+
+  this.totalReceived = function () {
     var i;
     var sum = 0;
     for (i = 0; i < this.dirArr.length; i++) {
@@ -85,9 +85,9 @@ function MessageLog(user) {
         sum++;
       }
     }
-    
+
     return sum;
-  }
+  };
 }
 //end your code
 
@@ -97,7 +97,9 @@ function MessageLog(user) {
 * received.
 */
 //your code here
-MessageLog.prototype.lastReceivedMessage = function() { return this.msgArr[0]; }
+MessageLog.prototype.lastReceivedMessage = function () {
+  return this.msgArr[0];
+};
 //end your code
 
 /**
@@ -108,7 +110,7 @@ MessageLog.prototype.lastReceivedMessage = function() { return this.msgArr[0]; }
 
 //your code here
 var myLog = new MessageLog("BlackHatGuy");
-myLog.logMessage("foo",1);
-myLog.logMessage("bar",1);
-myLog.logMessage("baz",1);
+myLog.logMessage("foo", 1);
+myLog.logMessage("bar", 1);
+myLog.logMessage("baz", 1);
 //end your code

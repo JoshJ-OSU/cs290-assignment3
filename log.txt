@@ -1,3 +1,11 @@
+Start: Fri, 17 Apr 2015 15:00:00 -0700
+End: Fri, 17 Apr 2015 17:24:00 -0700
+Tasks: Finally got a version of jshint to work.  Applied proper styling to JavaScript.  Read Googles JavaScript styling guide.
+
+Start: Fri, 17 Apr 2015 10:30:00 -0700
+End: Fri, 17 Apr 2015 12:30:00 -0700
+Tasks: Tried unsuccessfully to install and use jslint.
+
 Start: Fri, 17 Apr 2015 7:20:00 -0700
 End: Fri, 17 Apr 2015 9:50:00 -0700
 Tasks: Finished objects.js functionality, Attempted to align format of js to google coding standards using jslint.com

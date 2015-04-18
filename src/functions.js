@@ -11,7 +11,6 @@
 * It should return the null value.
 * @return {null} - 'useless'.
 */
-
 //your code here
 function uselessFunction() {
   return null;
@@ -35,14 +34,17 @@ var barType = typeof bar;
 bar = function (doubleArray) {
   var i;
   var successfulAssignment = true;
-  for(i = 0; i < doubleArray.length; i++) {
-    if (!(doubleArray[i] *= 2)) {
+
+  for (i = 0; i < doubleArray.length; i++) {
+    if (isNaN(doubleArray[i]) === true) {
       successfulAssignment = false;
+    } else {
+      doubleArray[i] *= 2;
     }
   }
-    
+
   return successfulAssignment;
-}
+};
 //end your code
 
 /**
@@ -53,9 +55,9 @@ bar = function (doubleArray) {
 * @property {string} message - the commit message
 */
 function GitLog(hash, date, message) {
-    this.hash = hash;
-    this.date = date;
-    this.message = message;
+  this.hash = hash;
+  this.date = date;
+  this.message = message;
 }
 
 /**
@@ -78,25 +80,27 @@ function GitLog(hash, date, message) {
 */
 
 //your code here
-parseGit = function(logArray) {
+var parseGit = function (logArray) {
   var str;
-  var hashStr, dateStr, messageStr;
-  var hashEndIndex, dateEndIndex;
+  var hashStr;
+  var dateStr;
+  var messageStr;
+  var date;
   var gitLogArr = [];
-  
+
   var i;
   for (i = 0; i < logArray.length; i++) {
-    str = new String(logArray[i]);
-    
-    hashStr = str.substr(0,str.indexOf(' '));
+    str = logArray[i];
+
+    hashStr = str.substr(0, str.indexOf(' '));
     dateStr = str.substring(str.indexOf(' '), str.indexOf('"'));
-    messageStr = str.substring(str.indexOf('"')+1,str.length - 1);
-    
+    messageStr = str.substring(str.indexOf('"') + 1, str.length - 1);
+
     date = new Date(dateStr);
-    
+
     gitLogArr[i] = new GitLog(hashStr, date, messageStr);
   }
 
   return gitLogArr;
-}
+};
 //end your code
